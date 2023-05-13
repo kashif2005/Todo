@@ -1,0 +1,9 @@
+<div class="form">
+    <input type="text" #inputField name="form">
+    <button class="btn" (click)="getData(inputField.value)">sent</button>
+</div>
+<div *ngFor="let i of data">
+    <div class="card">
+        {{i}}
+    </div>
+</div>
